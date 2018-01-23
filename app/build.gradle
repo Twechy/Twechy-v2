@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.twechy.twechy_v2"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://dl.bintray.com/phoceis/maven' }
+    google()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.0.1'
+    compile 'com.android.support:design:27.0.1'
+    compile 'com.android.support:recyclerview-v7:27.0.1'
+    compile 'com.android.support:cardview-v7:27.0.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.7'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'pl.charmas.android:android-reactive-location2:2.0@aar'
+    /*compile 'com.google.android.gms:play-services-location:11.6.0'
+    compile 'com.google.android.gms:play-services-places:11.6.0'
+    compile 'com.google.android.gms:play-services-maps:11.6.0'*/
+    compile 'com.google.android.gms:play-services:11.6.0'
+    compile 'com.parse:parse-android:1.15.8'
+    compile 'com.firebase:geofire-android:2.1.2'
+    compile 'pl.charmas.android:android-reactive-location2:2.0@aar'
+    compile 'com.survivingwithandroid:weatherlib:1.6.0'
+    compile 'com.survivingwithandroid:weatherlib_okhttpclient:1.6.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'zh.wang.android:yweathergetter4a:1.3.0'
+    compile 'com.github.wangjiegulu:RapidFloatingActionButton:1.0.3'
+
+    /*compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-database:10.2.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.firebaseui:firebase-ui-storage:1.2.0'
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+    compile 'com.google.firebase:firebase-storage:10.0.1'*/
+
+
+    compile 'com.google.firebase:firebase-core:11.4.2'
+    compile 'com.firebase:firebase-client-android:2.4.0'
+    compile 'com.google.firebase:firebase-database:11.6.0'
+    compile 'com.google.firebase:firebase-messaging:11.6.0'
+    compile 'com.google.firebase:firebase-auth:11.6.0'
+//    compile 'com.firebaseui:firebase-ui-storage:3.0.0'
+//    compile 'com.firebaseui:firebase-ui-database:3.0.0'
+    compile 'com.firebaseui:firebase-ui-storage:1.2.0'
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+    compile 'com.google.firebase:firebase-config:11.6.0'
+    compile 'com.google.firebase:firebase-storage:11.6.0'
+
+    testCompile 'junit:junit:4.12'
+
+    //compile 'org.apache.jena:apache-jena-libs:3.6.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+
+    /*compile 'net.danlew:android.joda:2.9.9.1'
+    compile 'joda-time:joda-time:2.9.9'
+*/
+    /*compile 'com.google.android.gms:play-services-identity:10.2.6'
+    compile 'com.google.android.gms:play-services-awareness:10.2.6'
+    compile 'com.google.android.gms:play-services-vision:10.2.6'
+    compile 'com.google.android.gms:play-services-nearby:10.2.6'*/
+
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+}
+//apply plugin: 'com.google.gms.google-services'
+
+//apply plugin: 'com.jakewharton.butterknife'

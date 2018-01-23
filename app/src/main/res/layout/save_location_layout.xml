@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen3">
+
+    <ImageView
+        android:id="@+id/saveLocationImage"
+        android:layout_width="132dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/bg_screen3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_location_icon" />
+
+    <EditText
+        android:id="@+id/saveLocationName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Location Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savePickImage" />
+
+    <EditText
+        android:id="@+id/saveLocationDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Location Description"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveLocationName" />
+
+    <TextView
+        android:id="@+id/saveLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Latitude: "
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/saveLocationDescription"
+        app:layout_constraintStart_toStartOf="@+id/saveLocationDescription"
+        app:layout_constraintTop_toBottomOf="@+id/saveLocationDescription" />
+
+    <TextView
+        android:id="@+id/saveLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Longitude:"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/saveLocationDescription"
+        app:layout_constraintStart_toStartOf="@+id/saveLocationDescription"
+        app:layout_constraintTop_toBottomOf="@+id/saveLatitude" />
+
+    <TextView
+        android:id="@+id/savePickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="Pick Image"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/saveLocationName"
+        app:layout_constraintStart_toStartOf="@+id/saveLocationName"
+        app:layout_constraintTop_toBottomOf="@+id/saveLocationImage" />
+
+    <TextView
+        android:id="@+id/saveLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="saveLocationData"
+        android:text="Save"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveLongitude"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

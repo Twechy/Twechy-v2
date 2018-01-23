@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:layout_height="wrap_content"
+    android1:layout_width="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android1:id="@+id/view_pager"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content" />
+
+    <LinearLayout
+        android1:gravity="center"
+        android1:id="@+id/layoutDots"
+        android1:orientation="horizontal"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <View
+        android1:alpha=".5"
+        android1:background="@android:color/white"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content" />
+
+    <Button
+        android1:background="@null"
+        android1:id="@+id/btn_next"
+        android1:text="next"
+        android1:textColor="@android:color/black"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentEnd="true" />
+
+    <Button
+        android1:background="@null"
+        android1:id="@+id/btn_skip"
+        android1:text="skip"
+        android1:textColor="@android:color/black"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_toEndOf="@+id/layoutDots" />
+
+</RelativeLayout>
